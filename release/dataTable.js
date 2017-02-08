@@ -2113,6 +2113,8 @@
       this.defaults();
 
       this.options.$outer = $scope.$parent;
+      this.options.internal.offsetY = 0;
+      this.options.internal.offsetX = 0;
 
       $scope.$watch('dt.options.columns', function (newVal, oldVal) {
         _this6.transposeColumnDefaults();
